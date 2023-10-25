@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+ <head>
+    <link rel="stylesheet" href="javacontact.css">
+ </head>
+
+
+ <body>
+    <!-- This gets added for the reCAPTCHA contact form: 
+        <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+    <!-- This gets entered if you are using the POST method (OR) the reCAPTCHA for contact form: 
+        <form method="POST" action="/form.php" id="contact-form"> -->
+
+    <h1>Contact Form</h1>
+    <!-- This gets added for the reCAPTCHA version (and/or) the regular post version:
+        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
+
+    <!-- This is for the original post contact form: 
+        <form onsubmit="return false"></form> -->
+
+    <p><input type="text" placeholder="Enter your first name" id="firstName"></p>
+    <br><br>
+    <p><input type="text" placeholder="Enter your last name" id="lastName"></p>
+    <br><br>
+    <p><input type="radio" id="male" name="gender" value="male"> Male
+    <input type="radio" id="female" name="gender" value="female"> Female</p>
+    <br><br>
+    <p><input style="cursor: pointer;" type="email" placeholder="Enter your email" id="email"></p>
+    <br><br>
+    <p><input type="text" placeholder="Address" id="address" /></p>
+    &nbsp;&nbsp;&nbsp;
+
+    <p><select id="neigborhood">
+        <option disabled selected value> -- select a neigborhood -- </option>
+        <option value="California">California</option>
+        <option value="Parkland">Parkland</option>
+        <option value="ParkHill">ParkHill</option>
+        <option value="Russell">Russell</option>
+        <option value="Newburg">Newburg</option>
+        <option value="Smoketown">Smoketown</option>
+    </select></p>
+    <br><br>
+    <p><input type="checkbox" id="newsletter" />Send me monthly newsletter</p>
+    <br><br>
+    <p><span>Comments/ Questions?</span></p>
+    <br>
+    <p><textarea id="comments" cols="30" rows="10"></textarea></p>
+    <br><br>
+    <button onclick="sendContact();">Send Contact</button>
+<!-- and the last area should read with POST contact form:
+    <p><input type="submit" value="send" /></p>-->
+
+    <p><button
+        class="g-recaptcha"
+        type="submit"
+        data-sitekey="6Lf8ZsEoAAAAAJodvovAjcKj_eo30UV2CyXl70mj"
+        data-callback='onRecaptchaSuccess'
+        >
+          Submit
+        </button></p>
+</form>
+
+    <script src="javacontact.js"></script>
+<!-- This is used as (quoted from mailtrap.io)  a bulletproof solution for schema validation – https://validatejs.org/. For simplicity, just add a library from a CDN.
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
+<!-- This also used for reCAPTCHA contact form:
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script>-->
+    
+ </body>
+</html>
