@@ -6,15 +6,26 @@
     <meta name="Sunshine Hughes" content="P.A.V.E. LLC | Contact Us">
     <meta name="PAVE" content="communication page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image" href="P.A.V.E. logo.jpg">
+    <link rel="icon" type="image" href="NewPaveLogo.jpg">
     <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
- <main>
+
+<div class="topnav" id="myTopnav">
+    <a href="index2.html" class="active">Home</a>
+    <a href="curriculum2.html">Curriculum</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
     <header>
-        <a class="logo-home" href="index.html"><img src="P.A.V.E. logo.jpg" style="width: 60px; height:60px;"></a><h1>Welcome to P.A.V.E.</h1>
+        <a class="logo-home" href="index.html"><img src="NewPaveLogo.jpg" style="width: 60px; height:60px;"></a><h1>Welcome to P.A.V.E.</h1>
     </header>
 
 
@@ -62,16 +73,21 @@
     <p><textarea id="comments" cols="30" rows="10"></textarea></p>
     <br><br>
     <button onclick="sendContact();">Send Contact</button>
-<!-- and the last area should read with POST contact form:
-    <p><input type="submit" value="send" /></p>-->
-        </section>
+</section>
 
 <p>Thank you for visiting P.A.V.E.'s website! We are so glad to have you and that you'd like to know more about our program. </p>
 
-        <div id="footer">
-            <p>P.A.V.E. LLC  1351 Catalpa Street, Louisville, KY 40211 &copy; 2023 Sunshine Hughes</p>
-        </div>
+        <footer>
+        P.A.V.E. LLC  1351 Catalpa Street, Louisville, KY 40211 &copy; 2023 Sunshine Hughes
+        </footer>
 
- </main>
+ 
+ <!-- This is used as solution for schema validation – https://validatejs.org/ -->
+ <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+ <!-- This is for reCAPTCHA on contact form -->
+     <script src="https://www.google.com/recaptcha/api.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+            
 </body>
 </html>
