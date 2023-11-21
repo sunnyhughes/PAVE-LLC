@@ -7,7 +7,7 @@
 
  <body>
     <!-- This gets added for the reCAPTCHA contact form: 
-        <script src="https://www.google.com/recaptcha/api.js"></script> -->
+         -->
 
     <!-- This gets entered if you are using the POST method (OR) the reCAPTCHA for contact form: 
         <form method="POST" action="/form.php" id="contact-form"> -->
@@ -62,11 +62,12 @@
 </form>
 
     <script src="javacontact.js"></script>
-<!-- This is used as (quoted from mailtrap.io)  a bulletproof solution for schema validation – https://validatejs.org/. For simplicity, just add a library from a CDN.
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
-<!-- This also used for reCAPTCHA contact form:
+<!-- This is used as solution for schema validation – https://validatejs.org/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-  <script>-->
+
+<!-- This is for reCAPTCHA on contact form -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     
  </body>
 </html>

@@ -1,9 +1,149 @@
+/* General styles */
+
 body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navigation bar styles */
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* Section styles */
+
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section p {
+  text-align: justify;
+}
+
+#curriculum a {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+/* Modules Headers */
+
+.module h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.module h3 .presenter,
+.module h3 .topic {
+  font-style: italic;
+}
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+CSS for GALLERY
+/* Default layout for large screens (laptops/desktops) */
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  width: 25%;
+}
+
+/* Tablet layout */
+
+@media (max-width: 768px) {
+  .gallery-image {
+      width: 50%;
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 576px) {
+  .gallery-image {
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(green, gold, red, yellow);
   }
   
-/* Navigation menu */
+/* Navigation menu 
 
 .topnav {
     overflow: hidden;
@@ -41,7 +181,7 @@ body {
     color: white;
   }
   
-/* Main Page Area */
+/* Main Page Area 
 
 
 h3 {
@@ -52,7 +192,7 @@ h3 {
   }
 
 
-/* Footer area */
+/* Footer area 
 footer {
     background-color: #333;
     color: #fff;
