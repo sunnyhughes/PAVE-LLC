@@ -112,71 +112,6 @@ section p {
 
 /* Contact form page */
 
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.name-row,
-.gender-row,
-.zipcode-neighborhood-row,
-.phone-email-row,
-.comments-row {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.name-row label,
-.gender-row label,
-.zipcode-neighborhood-row label,
-.phone-email-row label,
-.comments-row label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.name-row input,
-.gender-row input,
-.zipcode-neighborhood-row input,
-.phone-email-row input,
-.comments-row textarea {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-}
-
-.gender-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.gender-options {
-  display: flex;
-  margin-left: 20px;
-}
-
-#contact-form button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-/* Media query for screens up to 600px */
-
-
-#contact a {
-  color: rgb(12, 85, 180);
-  text-decoration: underline;
-}
-
-#contact h2 {
-  text-align: left;
-}
 
 
 /* Footer styles */
@@ -229,15 +164,7 @@ CSS for GALLERY
 }
 
 /* Media query for screens up to 600px */
-@media (max-width: 600px) {
-  .name-row,
-  .gender-row,
-  .zipcode-neighborhood-row,
-  .phone-email-row,
-  .comments-row {
-    flex-direction: column;
-  }
-}
+
 
 /* Tablet layout */
 
@@ -255,86 +182,3 @@ CSS for GALLERY
   }
 }
 
-
-
-
-
-
-
-/*body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(green, gold, red, yellow);
-  }
-  
-/* Navigation menu 
-
-.topnav {
-    overflow: hidden;
-    background-color: green;
-    position: relative;
-  }
-  
-.topnav #myLinks {
-    display: none;
-  }
-
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  } 
-
-.topnav a:hover {
-    background-color: #dd4b4b;
-    color: black;
-  }
-  
-.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-/* Main Page Area 
-
-
-h3 {
-    justify-items: auto;
-    margin: 5px;
-    padding: 5px;
-
-  }
-
-
-/* Footer area 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    clear: both;
-    text-align: center;
-
-}
-
-footer p {
-    font-size: 14px;
-    padding: 5em;
-    margin: 3em;
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        display: flex;
-        flex-direction:column;
-    }
-}

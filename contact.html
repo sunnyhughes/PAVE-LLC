@@ -24,6 +24,8 @@
     </a>
   </div>
 
+  <main>
+    
     <header id="thank you">
        <h2>Thank you for visiting P.A.V.E.'s website! <h2>
     </header>
@@ -47,78 +49,19 @@
             </p>
     
             <h3>Contact Form:</h3>
-            <form id="contact-form">
-                <div class="name-row">
-                  <label for="firstName">First Name:</label>
-                  <input type="text" id="firstName" name="firstName" required>
-                </div>
-              
-                <div class="name-row">
-                  <label for="lastName">Last Name:</label>
-                  <input type="text" id="lastName" name="lastName" required>
-                </div>
-              
-                <div class="gender-row">
-                  <label for="gender">Gender:</label>
-                  <div class="gender-options">
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label>
-              
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-              
-                    <input type="radio" id="other" name="gender" value="other" required>
-                    <label for="other">Other</label>
-                  </div>
-                </div>
-              
-                <div class="zipcode-neighborhood-row">
-                  <label for="zipcode">Zipcode:</label>
-                  <input type="text" id="zipcode" name="zipcode" required>
-              
-                  <label for="neighborhood">Neighborhood:</label>
-                  <select id="neighborhood" name="neighborhood" required>
-                    <option value="">Select Neighborhood</option>
-                    <option value="neighborhood1">California</option>
-                    <option value="neighborhood2">ParkHill</option>
-                    <option value="neighborhood3">Parkland</option>
-                    <option value="neighborhood4">Newburg</option>
-                    <option value="neighborhood5">Russell</option>
-                  </select>
-                </div>
-              
-                <div class="phone-email-row">
-                  <label for="phone">Phone number:</label>
-                  <input type="tel" id="phone" name="phone" required>
-              
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-              
-                <div class="comments-row">
-                  <label for="comments">Comments:</label>
-                  <textarea id="comments" name="comments" rows="4" cols="50" oninput="updateWordCount()"></textarea>
-              
-                  <div id="wordCount">Word Count: 0</div>
-                  <div id="messageBox"></div>
-                </div>
-              
-                <button type="submit" onclick="sendContact();">Submit</button>
-              </form>
-</section>
 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflmkUF0wssyBCGOUqHJe1dqH1yord6fcAkAHzfV47a12x87g/viewform?embedded=true" width="640" height="1979" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+
+    </main>
 
         <footer>
         P.A.V.E. LLC Louisville KY &copy; 2023 Sunshine Hughes
         </footer>
 
  <script src="script.js"></script>
- <!-- This is used as solution for schema validation – https://validatejs.org/ -->
- <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
- <!-- This is for reCAPTCHA on contact form -->
-     <script src="https://www.google.com/recaptcha/api.js"></script>
-     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
             
 </body>
+
 </html>

@@ -6,17 +6,6 @@ toggleMenu.addEventListener('click', () => {
 });
 
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-
-/* 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -28,89 +17,53 @@ function myFunction() {
   }
 }
 
-const firstNameRegex = /^[a-zA-Z]+$/;
-const lastNameRegex = /^[a-zA-Z]+$/;
-const genderRegex = /^(male|female)$/;
-const zipCodeRegex = /^\d{5}$/;
-const neighborhoodRegex = (california|parkland|parkhill|russell|newburg|smoketown);
-const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
-const emailRegex = /^[\w-]+@[\w-]+.[a-zA-Z]+$/;
-const commentsRegex = /.+/;
+/* Contact Form Regex Area */
 
-const form = document.getElementById('contact-form');
-const firstNameInput = document.getElementById('firstName');
-const lastNameInput = document.getElementById('lastName');
-const genderInput = document.getElementById('gender');
-const zipCodeInput = document.getElementById('zipCode');
-const neighborhoodInput = document.getElementById('neighborhood');
-const phoneInput = document.getElementById('phone');
-const emailInput = document.getElementById('email');
-const commentsInput = document.getElementById('comments');
-const errorMessage = document.getElementById('error-message');
+const fullNameInput = document.getElementById('fullNameInput');
+const phoneInput = document.getElementById('phoneInput');
+const emailInput = document.getElementById('emailInput');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+const nameRegex = /^[a-zA-Z]+$/;
+const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+const emailRegex = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z]{2,5})$/;
 
-  let isValid = true;
-
-  // Validate First Name
-  if (!firstNameRegex.test(firstNameInput.value)) {
-    errorMessage.textContent = 'Please enter a valid first name';
-    firstNameInput.focus();
-    isValid = false;
+const validateFirstName = () => {
+  if (!nameRegex.test(fullNameInput.value)) {
+    fullNameInput.classList.add('error');
+    fullNameInput.nextElementSibling.textContent = 'Invalid full name format';
+  } else {
+    fullNameInput.classList.remove('error');
+    fullNameInput.nextElementSibling.textContent = '';
   }
+};
 
-  // Validate Last Name
-  if (!lastNameRegex.test(lastNameInput.value)) {
-    errorMessage.textContent = 'Please enter a valid last name';
-    lastNameInput.focus();
-    isValid = false;
-  }
-
-  // Validate Gender
-  if (!genderRegex.test(genderInput.value)) {
-    errorMessage.textContent = 'Please select a gender';
-    genderInput.focus();
-    isValid = false;
-  }
-
-  // Validate Zip Code
-  if (!zipCodeRegex.test(zipCodeInput.value)) {
-    errorMessage.textContent = 'Please enter a valid zip code';
-    zipCodeInput.focus();
-    isValid = false;
-  }
-
-  // Validate Neighborhood
-  if (!neighborhoodRegex.test(neighborhoodInput.value)) {
-    errorMessage.textContent = 'Please select a neighborhood';
-    neighborhoodInput.focus();
-    isValid = false;
-  }
-
-  // Validate Phone Number
+const validatePhone = () => {
   if (!phoneRegex.test(phoneInput.value)) {
-    errorMessage.textContent = 'Please enter a valid phone number';
-    phoneInput.focus();
-    isValid = false;
+    phoneInput.classList.add('error');
+    phoneInput.nextElementSibling.textContent = 'Invalid phone number format';
+  } else {
+    phoneInput.classList.remove('error');
+    phoneInput.nextElementSibling.textContent = '';
   }
+};
 
-  // Validate Email Address
+const validateEmail = () => {
   if (!emailRegex.test(emailInput.value)) {
-    errorMessage.textContent = 'Please enter a valid email address';
-    emailInput.focus();
-    isValid = false;
+    emailInput.classList.add('error');
+    emailInput.nextElementSibling.textContent = 'Invalid email format';
+  } else {
+    emailInput.classList.remove('error');
+    emailInput.nextElementSibling.textContent = '';
   }
+};
 
-  // Validate Comments
-  if (!commentsRegex.test(commentsInput.value)) {
-    errorMessage.textContent = 'Please enter some comments';
-    commentsInput.focus();
-    isValid = false;
-  }
+fullNameInput.addEventListener('blur', validateFullName);
+phoneInput.addEventListener('blur', validatePhone);
+emailInput.addEventListener('blur', validateEmail);
 
-  if (isValid) {
-    // Submit the form data to the server
-  }
-});
+function updateWordCount() {
+  const commentsText = document.getElementById('comments').value;
+  const wordCount = commentsText.split(' ').length;
+  document.getElementById('wordCount').textContent = `Word Count: ${wordCount}`;
+}
 
