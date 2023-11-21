@@ -33,37 +33,21 @@
             <p>You can reach us by email at &nbsp;<a href="mailto:Pavellc502@gmail.com">Pavellc502@gmail.com</a> &nbsp; or completing the contact form below.</p>
     
             <h3>Contact Form:</h3>
-            <p><input type="text" placeholder="Enter your first name" id="firstName"></p>
-    <br><br>
-    <p><input type="text" placeholder="Enter your last name" id="lastName"></p>
-    <br><br>
-    <p><input type="radio" id="male" name="gender" value="male"> Male
-    <input type="radio" id="female" name="gender" value="female"> Female</p>
-    <br><br>
-    <p><input style="cursor: pointer;" type="email" placeholder="Enter your email" id="email"></p>
-    <br><br>
-    <p><input type="text" placeholder="Address" id="address" /></p>
-    &nbsp;&nbsp;&nbsp;
-
-    <p><select id="neigborhood">
-        <option disabled selected value> -- select a neigborhood -- </option>
-        <option value="California">California</option>
-        <option value="Parkland">Parkland</option>
-        <option value="ParkHill">ParkHill</option>
-        <option value="Russell">Russell</option>
-        <option value="Newburg">Newburg</option>
-        <option value="Smoketown">Smoketown</option>
-    </select></p>
-    <br><br>
-    <p><input type="checkbox" id="newsletter" />Send me monthly newsletter</p>
-    <br><br>
-    <p><span>Comments/ Questions?</span></p>
-    <br>
-    <p><textarea id="comments" cols="30" rows="10"></textarea></p>
-    <br><br>
-    <button onclick="sendContact();">Send Contact</button>
-<!-- and the last area should read with POST contact form:
-    <p><input type="submit" value="send" /></p>-->
+            <form action="process_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+    
+                <input type="submit" value="Submit">
+            </form>
         </section>
 
 <p>Thank you for visiting P.A.V.E.'s website! We are so glad to have you and that you'd like to know more about our program. </p>
