@@ -24,14 +24,14 @@
     </a>
   </div>
 
-    <header>
-       <h1>Thank you for visiting P.A.V.E.'s website! We are so glad to have you and that you'd like to know more about our program.</h1>
+    <header id="thank you">
+       <h2>Thank you for visiting P.A.V.E.'s website! <h2>
     </header>
 
 
         <section id="welcome">
-            
-            <p>P.A.V.E. is a non-profit organization that is centered around improving the connections between adults and youth. We strive to help parents create an open dialog to discuss the issues that face our youth in the 21st century and ways to assist. Our primary goal is to provide parents with resources to use  in their families that build confidence and help resolve conflicts that hinder success in the younger population so that they see their future as positive and thriving.</p>
+
+            <p>We are so glad to have you and that you'd like to know more about our program.</p>
 
             <p>We believe in that old addege: "It takes a village to raise a child" and understand that the more involvement from the community increases family stability and self-sufficiency. Everyone can benefit when everyone is committed in doing their part in building a better life for all. And that is where YOU come in! Whether you are a parent, a family friend, a professional, or just a person interested in giving whatever skills you have...PAVE needs you! And we'd be thrilled to have you!</p>
             
@@ -47,58 +47,66 @@
             </p>
     
             <h3>Contact Form:</h3>
-            <p>
-                <label for= "firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                &nbsp;
-                <label for= "lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-            </p>
-            
-            <p>
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other" required>
-            <label for="other">Other</label>
-            </p>
-            
-            <p>
-            <label for="zipcode">Zipcode:</label>
-            <input type="text" id="zipcode" name="zipcode" required>
-            &nbsp;
-            <label for="neighborhood">Neighborhood:</label>
-            <select id="neighborhood" name="neighborhood" required>
-            <option value=" ">Select Neighborhood</option>
-            <option value="neighborhood1">California</option>
-            <option value="neighborhood2">ParkHill</option>
-            <option value="neighborhood3">Parkland</option>
-            <option value="neighborhood4">Newburg</option>
-            <option value="neighborhood5">Russell</option>
-            </select>
-            </p>
-            
-            <p>
-            <label for="phone">Phone number:</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            </p>
-          
-            <p><label for="comments">Comments:</label></p>
-            <p><textarea  id="comments" name="comments" rows="4" cols="50" oninput="updateWordCount()"></textarea>
-            <div id="wordCount">Word Count: 0</div>
-            <div id="messageBox"></div></p>
-            
-            <button type="submit" onclick="sendContact();">Submit</button>
-        
-            </form>
+            <form id="contact-form">
+                <div class="name-row">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+              
+                <div class="name-row">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              
+                <div class="gender-row">
+                  <label for="gender">Gender:</label>
+                  <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+              
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+              
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                  </div>
+                </div>
+              
+                <div class="zipcode-neighborhood-row">
+                  <label for="zipcode">Zipcode:</label>
+                  <input type="text" id="zipcode" name="zipcode" required>
+              
+                  <label for="neighborhood">Neighborhood:</label>
+                  <select id="neighborhood" name="neighborhood" required>
+                    <option value="">Select Neighborhood</option>
+                    <option value="neighborhood1">California</option>
+                    <option value="neighborhood2">ParkHill</option>
+                    <option value="neighborhood3">Parkland</option>
+                    <option value="neighborhood4">Newburg</option>
+                    <option value="neighborhood5">Russell</option>
+                  </select>
+                </div>
+              
+                <div class="phone-email-row">
+                  <label for="phone">Phone number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              
+                <div class="comments-row">
+                  <label for="comments">Comments:</label>
+                  <textarea id="comments" name="comments" rows="4" cols="50" oninput="updateWordCount()"></textarea>
+              
+                  <div id="wordCount">Word Count: 0</div>
+                  <div id="messageBox"></div>
+                </div>
+              
+                <button type="submit" onclick="sendContact();">Submit</button>
+              </form>
 </section>
 
-<p>Thank you for visiting P.A.V.E.'s website! We are so glad to have you and that you'd like to know more about our program. </p>
 
         <footer>
         P.A.V.E. LLC Louisville KY &copy; 2023 Sunshine Hughes
