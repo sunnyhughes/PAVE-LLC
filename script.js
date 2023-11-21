@@ -1,27 +1,15 @@
-const menuToggle = document.getElementById("menuToggle");
-const menu = document.getElementById("menu");
+const toggleMenu = document.getElementById('toggle-menu');
+const mainMenu = document.getElementById('myTopnav');
 
-menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("show");
+toggleMenu.addEventListener('click', () => {
+    mainMenu.classList.toggle('active');
 });
-
-
-/* This is the menu */
-
-/*function toggleMenu() {
-  document.getElementById("topNav").classList.toggle ("open")
-  ("open")
-} */
-
-let x = document.getElementById('hamburgerBtn');
-  x.onclick = toggleMenu;
-
 
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 
 function myFunction() {
-  var x = document.getElementById("topNav");
+  var x = document.getElementById("myTopnav");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -29,11 +17,4 @@ function myFunction() {
   }
 }
 
-function myFunction() {
-var x = document.getElementById("myLinks");
-if (x.style.display === "block") {
-  x.style.display = "none";
-} else {
-  x.style.display = "block";
-}
-}
+

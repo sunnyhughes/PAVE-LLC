@@ -2,8 +2,8 @@
 
 body {
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 15px;
 }
 
 h1, h2, h3 {
@@ -32,7 +32,7 @@ a {
 
 /* Navigation bar styles */
 
-nav {
+/* nav {
   background-color: #f2f2f2;
   padding: 10px 0;
 }
@@ -54,6 +54,51 @@ nav a {
 nav a:hover {
   background-color: #ddd;
 }
+
+*/
+.toggle-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-menu {
+    display: block; /* Show the hamburger button on mobile screens */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+  #myTopnav {
+    display:none; 
+  }
+
+  #toggle-menu.active + #myTopnav {
+    display: block; /* Show the main menu when the hamburger button is clicked */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  #myTopnav li {
+    margin: 10px 0;
+  }
+
+  #myTopnav a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+
 
 /* Section styles */
 
@@ -82,6 +127,7 @@ section p {
 
 .module h3 {
   display: flex;
+  font-size: 16px;
   align-items: center;
   justify-content: space-between;
 }
@@ -89,6 +135,7 @@ section p {
 .module h3 .presenter,
 .module h3 .topic {
   font-style: italic;
+  font-size: 15px;
 }
 /* Footer styles */
 
@@ -98,6 +145,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
 
 CSS for GALLERY
 /* Default layout for large screens (laptops/desktops) */

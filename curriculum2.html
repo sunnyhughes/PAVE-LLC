@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image" href="NewPaveLogo.jpg">
     <link rel="stylesheet" href="style.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Curriculum</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+        <button id="toggle-menu" class="toggle-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+
+        <nav id="myTopnav">
+            <li><a href="index2.html" class="active">Home</a></li>
+            <li><a href="curriculum2.html">Curriculum</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacct.html">Contact Us</a></li>
+        </nav>
     </nav>
 
     <header>
@@ -46,7 +50,7 @@
 
         <div id="curriculum-timeline">
             <div class="quarter">
-                <h2>Quarter 1</h2>
+                <h3>Quarter 1</h3>
 
                 <div class="module">
                     <h3>Module 1: Communication &nbsp; 
