@@ -15,7 +15,7 @@
 
 <div class="topnav" id="myTopnav">
     <a href="index2.html" class="active">Home</a>
-    <a href="curriculum2.html">Curriculum</a>
+    <a href="curriculum.html">Curriculum</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact Us</a>
 
@@ -25,7 +25,7 @@
   </div>
 
     <header>
-        <a class="logo-home" href="index.html"><img src="NewPaveLogo.jpg" style="width: 60px; height:60px;"></a><h1>Welcome to P.A.V.E.</h1>
+       <h1>Thank you for visiting P.A.V.E.'s website! We are so glad to have you and that you'd like to know more about our program.</h1>
     </header>
 
 
@@ -40,48 +40,71 @@
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <h3>Email:</h3>
-            <p>You can reach us by email at &nbsp;<a href="mailto:Pavellc502@gmail.com">Pavellc502@gmail.com</a> &nbsp; or completing the contact form below.</p>
+        
+            <p id="social">You can reach us by email at <a href="mailto:Pavellc502@gmail.com">Pavellc502@gmail.com</a><br>
+            Message us on Facebook: <a href="https://www.facebook.com/PAVELouisville502/">Pave Louisville</a><br>
+            Or by completing the form below     
+            </p>
     
             <h3>Contact Form:</h3>
-            <p><input type="text" placeholder="Enter your first name" id="firstName"></p>
-    <br><br>
-    <p><input type="text" placeholder="Enter your last name" id="lastName"></p>
-    <br><br>
-    <p><input type="radio" id="male" name="gender" value="male"> Male
-    <input type="radio" id="female" name="gender" value="female"> Female</p>
-    <br><br>
-    <p><input style="cursor: pointer;" type="email" placeholder="Enter your email" id="email"></p>
-    <br><br>
-    <p><input type="text" placeholder="Address" id="address" /></p>
-    &nbsp;&nbsp;&nbsp;
-
-    <p><select id="neigborhood">
-        <option disabled selected value> -- select a neigborhood -- </option>
-        <option value="California">California</option>
-        <option value="Parkland">Parkland</option>
-        <option value="ParkHill">ParkHill</option>
-        <option value="Russell">Russell</option>
-        <option value="Newburg">Newburg</option>
-        <option value="Smoketown">Smoketown</option>
-    </select></p>
-    <br><br>
-    <p><input type="checkbox" id="newsletter" />Send me monthly newsletter</p>
-    <br><br>
-    <p><span>Comments/ Questions?</span></p>
-    <br>
-    <p><textarea id="comments" cols="30" rows="10"></textarea></p>
-    <br><br>
-    <button onclick="sendContact();">Send Contact</button>
+            <p>
+                <label for= "firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                &nbsp;
+                <label for= "lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </p>
+            
+            <p>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+            </p>
+            
+            <p>
+            <label for="zipcode">Zipcode:</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+            &nbsp;
+            <label for="neighborhood">Neighborhood:</label>
+            <select id="neighborhood" name="neighborhood" required>
+            <option value=" ">Select Neighborhood</option>
+            <option value="neighborhood1">California</option>
+            <option value="neighborhood2">ParkHill</option>
+            <option value="neighborhood3">Parkland</option>
+            <option value="neighborhood4">Newburg</option>
+            <option value="neighborhood5">Russell</option>
+            </select>
+            </p>
+            
+            <p>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            </p>
+          
+            <p><label for="comments">Comments:</label></p>
+            <p><textarea  id="comments" name="comments" rows="4" cols="50" oninput="updateWordCount()"></textarea>
+            <div id="wordCount">Word Count: 0</div>
+            <div id="messageBox"></div></p>
+            
+            <button type="submit" onclick="sendContact();">Submit</button>
+        
+            </form>
 </section>
 
 <p>Thank you for visiting P.A.V.E.'s website! We are so glad to have you and that you'd like to know more about our program. </p>
 
         <footer>
-        P.A.V.E. LLC  1351 Catalpa Street, Louisville, KY 40211 &copy; 2023 Sunshine Hughes
+        P.A.V.E. LLC Louisville KY &copy; 2023 Sunshine Hughes
         </footer>
 
- 
+ <script src="script.js"></script>
  <!-- This is used as solution for schema validation – https://validatejs.org/ -->
  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 

@@ -9,7 +9,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: rgb(12, 85, 180);
   overflow: hidden;
 }
 
@@ -32,7 +32,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: rgb(185, 224, 12);
   color: white;
 }
 
@@ -82,13 +82,17 @@ section p {
   text-align: justify;
 }
 
+#goals li {
+  list-style-type:circle;
+}
+
 #curriculum a {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
+  color: rgb(12, 85, 180);
+  text-align: center;
+  text-decoration: underline;
 }
 
 /* Modules Headers */
@@ -105,10 +109,23 @@ section p {
   font-style: italic;
   font-size: 15px;
 }
+
+#contact a {
+  color: rgb(12, 85, 180);
+  text-decoration: underline;
+}
+
+#contact h2 {
+  text-align: left;
+}
+#social p a {
+  margin: 10px;
+  padding: 10px;
+}
 /* Footer styles */
 
 footer {
-  background-color: #333;
+  background-color: rgb(12, 85, 180);
   color: white;
   padding: 20px 0;
   text-align: center;
