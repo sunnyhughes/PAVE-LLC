@@ -60,10 +60,3 @@ const validateEmail = () => {
 fullNameInput.addEventListener('blur', validateFullName);
 phoneInput.addEventListener('blur', validatePhone);
 emailInput.addEventListener('blur', validateEmail);
-
-function updateWordCount() {
-  const commentsText = document.getElementById('comments').value;
-  const wordCount = commentsText.split(' ').length;
-  document.getElementById('wordCount').textContent = `Word Count: ${wordCount}`;
-}
-
