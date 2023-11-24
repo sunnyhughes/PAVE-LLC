@@ -61,17 +61,5 @@ fullNameInput.addEventListener('blur', validateFullName);
 phoneInput.addEventListener('blur', validatePhone);
 emailInput.addEventListener('blur', validateEmail);
 
-const ctx = document.getElementById('myChart').getContext('2d');
-const chart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November'],
-    datasets: [
-      {
-        label: 'My Dataset',
-        data: [10, 20, 30, 40, 50, 60],
-      },
-    ],
-  },
-});
+
 

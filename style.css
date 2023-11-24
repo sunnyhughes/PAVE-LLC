@@ -128,12 +128,33 @@ section p {
 }
 
 /* The Attendance Chart */
-
-canvas {
-  max-width: 600px; /* Adjust the maximum width as needed */
-  margin: auto; /* Center the chart on the page */
-  display: block;
+#outcome a {
+  color: rgb(12, 85, 180);
+  text-decoration: underline;
 }
+
+.chart-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.chart-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chart-labels {
+  font-size: 14px;
+  color: #666;
+}
+
+.chart-bars {
+  background-color: #007bff;
+}
+
 
 /* Footer styles */
 
