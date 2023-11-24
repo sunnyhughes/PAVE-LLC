@@ -127,6 +127,14 @@ section p {
   text-decoration: underline;
 }
 
+/* The Attendance Chart */
+
+canvas {
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: auto; /* Center the chart on the page */
+  display: block;
+}
+
 /* Footer styles */
 
 footer {
