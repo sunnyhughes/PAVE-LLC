@@ -26,7 +26,18 @@
   </div>
 
   <div>
-  <iframe id="chartIframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRX-wJbvxoeQVCEhygRDLI98HrmHVKmHjG-_gNk_sY2mdsi4rASW28SlK37KnciyTGQmF8C985XtsCi/pubhtml?gid=1402444457&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  <iframe id="chartIframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRX-wJbvxoeQVCEhygRDLI98HrmHVKmHjG-_gNk_sY2mdsi4rASW28SlK37KnciyTGQmF8C985XtsCi/pubhtml?gid=1402444457&amp;single=true&amp;widget=true&amp;headers=false">
+
+  <script> 
+  function updateChart() {
+      let sheet = SpreadsheetApp.getActiveSheet();
+      let dataRange = sheet.getRange('A1:B12');
+      let chart = sheet.getCharts()[0];
+      chart.setDataRange(dataRange);
+      chart.update();
+    }
+  </script>
+  </iframe>
 </div>
 
   <footer>

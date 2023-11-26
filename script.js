@@ -61,11 +61,8 @@ fullNameInput.addEventListener('blur', validateFullName);
 phoneInput.addEventListener('blur', validatePhone);
 emailInput.addEventListener('blur', validateEmail);
 
+/* This updates the chart information every 24 hours */
 
-function updateChart() {
-  var sheet = SpreadsheetApp.getActiveSheet();
-  var dataRange = sheet.getRange('A1:B12');
-  var chart = sheet.getCharts()[0];
-  chart.setDataRange(dataRange);
-  chart.update();
-}
+setTimeout(updateData, 86400000);
+
+updateData();
