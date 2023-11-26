@@ -9,7 +9,8 @@
   <link rel="icon" type="image" href="NewPaveLogo.jpg">
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script src="node_modules/chart.js"></script>
+
 </head>
 
 <body>
@@ -25,38 +26,14 @@
     </a>
   </div>
 
-  <canvas id="myChart"></canvas>
+  
+  <iframe id="chartIframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRX-wJbvxoeQVCEhygRDLI98HrmHVKmHjG-_gNk_sY2mdsi4rASW28SlK37KnciyTGQmF8C985XtsCi/pubhtml?gid=1402444457&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
-  <script>
-    const ctx = document.getElementById('myChart').getContext('2d');
-    const chart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['January', 'February', 'March', 'April','May', 'June', 'July', 'August', 'September', 'October', 'November'],
-        datasets: [{
-          label: 'Attendance Counts',
-          data: [0, 18, 40, 12, 3, 94, 75, 85, 80, 102, 85],
-          backgroundColor: 'skyblue',
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Attendance Counts by Month in 2023'
-        },
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
-    });
-  </script>
 
   <footer>
     P.A.V.E. LLC Louisville KY  Â© 2023 Sunshine Hughes
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
