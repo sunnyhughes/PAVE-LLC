@@ -129,6 +129,7 @@ section p {
 
 /* The Attendance Chart */
 #outcome a {
+  display: flex;
   color: rgb(12, 85, 180);
   text-decoration: underline;
 }
@@ -187,9 +188,6 @@ CSS for GALLERY
   }
 }
 
-/* Media query for screens up to 600px */
-
-
 /* Tablet layout */
 
 @media (max-width: 768px) {
@@ -206,16 +204,17 @@ CSS for GALLERY
   }
 }
 
-@media (min-width: 769px) {
+/* Style the chart iframe for screens between 480px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
   #chartIframe {
-    width: 800px;
+    width: 600px;
   }
 }
 
-/* Style the chart iframe for screens between 480px and 768px */
-@media (max-width: 768px) and (min-width: 481px) {
+@media (min-width: 769px) {
   #chartIframe {
-    width: 600px;
+    width: 800px;
+    
   }
 }
 
