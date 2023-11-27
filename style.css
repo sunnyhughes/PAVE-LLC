@@ -81,12 +81,6 @@ section {
   padding: 20px 0;
 }
 
-section p {
-  margin: 10px;
-  padding: 10px 0;
-  text-align: justify;
-}
-
 #session-layout h3 {
   font-size: 20px;
 }
@@ -128,14 +122,11 @@ section p {
 /* Contact form page */
 
 #contact p {
-  font-size: 18px;
-  margin: 5px;
-  padding: 5px;
-}
-#contact h3{
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
+
 }
+
 #social a {
   color: rgb(12, 85, 180);
   text-decoration: underline;
@@ -173,6 +164,8 @@ CSS for GALLERY
 .gallery-image {
   width: 25%;
 }
+
+
 
 /* MEDIA QUERIES */
 
@@ -238,3 +231,5 @@ CSS for GALLERY
     height: auto;
   }
 }
+
+
