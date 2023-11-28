@@ -188,6 +188,14 @@ footer {
 
 
 CSS for GALLERY
+
+.parent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 /* Default layout for large screens (laptops/desktops) */
 
 .gallery-container {
@@ -197,10 +205,11 @@ CSS for GALLERY
 }
 
 .gallery-image {
-  width: 25%;
+  width: calc(33.33% - 20px); /* Three images per row with some margin */
+  height: auto;
+  object-fit: cover;
+  margin: 10px;
 }
-
-
 
 /* MEDIA QUERIES */
 
@@ -260,23 +269,26 @@ CSS for GALLERY
   }
 }
 
-
+/* Picture Gallery */
 
 /* Tablet layout */
-
 @media (max-width: 768px) {
   .gallery-image {
-      width: 50%;
+      width: calc(50% - 20px); /* Two images per row with some margin */
   }
 }
 
 /* Mobile layout */
-
 @media (max-width: 576px) {
   .gallery-image {
-      width: 100%;
-      height: auto;
+      width: 100%; /* One image per row with full width */
   }
+}
+
+ /* Additional styling for smaller screens */
+
+ @media (max-width: 768px) {
+  justify-content: space-around; /* Adjust for smaller screens */
 }
 
 /* Chart iframe for screens wider than 1024px */

@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # PAVE-LLC Website
 Hello. Welcome to my P.A.V.E. LLC website. P.A.V.E. is an acronym for Parents Against Violence Engagement, a non-profit program based in Louisville KY. The P.A.V.E. program focuses on engaging parents and other adults in gaining new skills and resources in order to change the trajectory of violence among our city's youth. 
 
@@ -28,4 +26,3 @@ I developed my project on my chromebook using the Linux terminal environment in 
 
 #This introduction site
 is a launchpad for introducing P.A.V.E. to the city of Louisville. It is the presentation of how P.A.V.E. encourages participants (me included) to seek out new goals and dreams through attempting things that seem out of reach. I am proud of my contribution to P.A.V.E. through developing this website. I worked hard to gain the knowledge of web development and will continue to improve my skills in F.E.W.D. because of P.A.V.E.'s support. 
->>>>>>> f88b9cc7c92a9f1387446783b4af18481db1cc24
