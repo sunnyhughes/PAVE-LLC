@@ -144,6 +144,11 @@ a {
 
 
 /* Google form Page */
+#googleform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #googleform iframe{
   align-items: center;
