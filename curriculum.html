@@ -27,6 +27,30 @@
     </header>
 
     <main>
+        <section id="new-session-starts">
+            <script>
+                // Get the current date
+                let today = new Date();
+              
+                // Set the date for the PAVE class session (January 4, 2024)
+                let paveClassDate = new Date("January 4, 2024");
+              
+                // Check if the PAVE class date is in the future
+                if (today < paveClassDate) {
+                  // Calculate the remaining days until the PAVE class session
+                  let remainingDays = Math.ceil((paveClassDate - today) / (1000 * 60 * 60 * 24));
+              
+                  // Display the countdown at the top of the page
+                  document.write("<h3>Countdown to the 2024 PAVE Class Session</h3>");
+                  document.write("<p>There are " + remainingDays +
+                                 " days remaining until the PAVE class session begins on January 4, 2024.</p>");
+                } else {
+                  // If the PAVE class date has already passed, display a message
+                  document.write("<h2>The 2024 PAVE class session started on January 4, 2024.</h2>");
+                }
+              </script>
+        </section>
+
         <section id="session-layout"> 
         <h2>Weekly Session Schedule 2023</h2>
         
@@ -72,7 +96,7 @@
                         <span class="presenter">Staff (Presenter)</span> &nbsp;
                         <span class="topic">February 2023</span>
                     </h4>
-
+                    <p>In this module we will discuss motivation: what it is, how to identify it and definitely how to use it to acheive goals and aspirations. We will gain insight to what motivates us and how we can use that motivation to change the trajectory of our future.</p>
                     <p>
                         <li>Week 1: Understanding motivation and goal setting</li> 
                         <li>Week 2: Identifying personal values and motivators</li> 
@@ -119,13 +143,13 @@
                         <li>Week 4: Module wrap-up and participant survey</li>
                     </p>
                 </div>
-
+                
                 <div class="module">
                     <h4>Module 5: Self-sufficiency &nbsp;
                         <span class="presenter">Sameko Bailey (Presenter)</span> &nbsp;
                         <span class="topic">May 2023</span>
                     </h4>
-
+                        
                     <p>In this module we will discuss how to establish positive routines to help families become consistent. We will develop plans through brainstorming what type of schedule is desired (chores, school activities, family activities, etc.) and tips on how to follow through with the proposed plans in our everyday lives.</p>
                     <p>
                         <li>Week 1: Financial literacy and budgeting</li> 
@@ -154,6 +178,8 @@
 
             <p class="activity">Parent Activity - Executive Bowling</p>
 
+            
+
             <div class="quarter">
                 <h3>Quarter 3 (July - September)</h3>
 
@@ -175,10 +201,10 @@
 
                 <div class="module">
                     <h4>Module 8: Conflict Resolution &nbsp;
-                        <span class="presenter">Staff (Presenter)</span> &nbsp;
+                        <span class="presenter">TBD (Presenter)</span> &nbsp;
                         <span class="topic">August 2023</span>
                     </h4>
-
+                    <p>In this module we will discuss how to proactively identify potential conflictual situations, implement positive conflict detering or cessation. We will evaluate different mediation methods and how to negotiate for positive resolutions.</p>
                     <p>
                         <li>Week 1: Recognizing and understanding conflict styles</li>
                         <li>Week 2: Developing conflict resolution strategies</li>
@@ -230,7 +256,7 @@
                         <span class="topic">November 2023</span>
                     </h4>
 
-                    <p>In this module we will discuss how to support your family's coping skills through promoting healthy social skills and friendships. We will discuss how physical activity and spiritual/ religious beliefs provide positive effects in coping with life's many troubles and concerns</p>
+                    <p>In this module we will discuss how to support your family's coping skills through promoting healthy social skills and friendships. We will discuss how physical activity and spiritual/ religious beliefs provide positive effects in coping with life's many troubles and concerns.</p>
 
                     <p>
                         <li>Week 1: Healthy coping mechanisms for stress and difficult emotions</li>
@@ -259,7 +285,7 @@
                 </div>
             </section>
 
-            <p class="activity">Parent Activity - Annual Class Celebration!<br> We will conclude the completion of the program in the month of December with our annual celebration. We invite all participants with good standing attendance to join us for a graduation ceremony at a location to be determined at that time where they acknowledgements of their achievements and a certificate of completion.</p>
+            <p class="graduation">Parent Activity - December 16, 2023 - Annual Class Celebration!<br> We will conclude the completion of the program in the month of December with our annual celebration. We invite all participants with good standing attendance to join us for a graduation ceremony at a location to be determined at that time where they acknowledgements of their achievements and a certificate of completion.</p>
         </main>
 
             <footer>

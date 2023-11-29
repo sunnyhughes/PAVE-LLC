@@ -32,7 +32,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(185, 224, 12);
+  background-color: rgb(217, 255, 48);
   color: white;
 }
 
@@ -52,6 +52,19 @@ header {
   font-size: 35px;
   text-align: center;
   justify-content: center;
+}
+
+#new-session-starts {
+  border: dotted 5px rgb(217, 255, 48);
+}
+
+#new-session-starts h3 {
+  color: rgb(12, 85, 180);
+  text-align: center;
+}
+
+#new-session-starts p {
+  text-align: center;
 }
 
 h2 {
@@ -122,7 +135,14 @@ a {
 }
 
 .activity {
-  color: rgb(32, 145, 82)
+  color: rgb(12,85,180);
+  text-align: center;
+}
+
+.graduation {
+  color: rgb(12,85,180);
+  text-align: center;
+  border: solid 5px rgb(217, 255, 48);
 }
 /* Contact page */
 
