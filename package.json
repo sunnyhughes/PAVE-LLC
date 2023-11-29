@@ -1,8 +1,4 @@
 {
-  "dependencies": {
-    "chart.js": "^4.4.0",
-    "python": "^0.0.4"
-  },
   "name": "pave-llc",
   "description": "PAVE Website",
   "version": "1.0.0",
@@ -12,5 +8,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }
