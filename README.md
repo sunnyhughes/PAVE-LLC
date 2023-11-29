@@ -12,17 +12,14 @@ I developed my project on my chromebook using the Linux terminal environment in 
 # To run locally:
 1. Clone this repository
    https://github.com/sunnyhughes/PAVE-LLC.git
-2. Install the newest version of the following:
-   npm
-   npm install
-   googleapis
-   npm install googleapis
-3. Open it up in your browser on localhost
+2. Install the newest version of the following: npm, node.js, and       google-apis-nodejs-client-libraries
+3. Open it up in your browser on localhost: 5501
 
 #Features List
 1. Javascript - Form Validation w/ RegEx : Validates the contact form data before submission
 2. Visualize data in a user friendly way : Google Chart shows real-time attendance that updates every 24 hours
-3. Create a form and store submitted values : Contact form created with Google forms and submissions are stored on a Google sheets for retrieval
+3. Calculate and display data based on an external factor: Show the days until the new PAVE session begins in 2024.
+4. Create a form and store submitted values : Contact form created with Google forms and submissions are stored on a Google sheets for retrieval
 
 #This introduction site
 is a launchpad for introducing P.A.V.E. to the city of Louisville. It is the presentation of how P.A.V.E. encourages participants (me included) to seek out new goals and dreams through attempting things that seem out of reach. I am proud of my contribution to P.A.V.E. through developing this website. I worked hard to gain the knowledge of web development and will continue to improve my skills in F.E.W.D. because of P.A.V.E.'s support. 
