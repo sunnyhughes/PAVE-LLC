@@ -15,9 +15,9 @@ I developed my project on my chromebook using the Linux terminal environment in 
 
 2. Install in your terminal, the updated versions of the following:<br>
 
-      npm version 10.2.3
-      node version 20.10.0
-      google-apis-nodejs-client-libraries
+      npm version 10.2.3<br>
+      node version 20.10.0<br>
+      google-apis-nodejs-client-libraries<br>
 
 3. Clone this repository to your local machine:
 
