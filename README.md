@@ -7,17 +7,17 @@ This website is the official introduction of P.A.V.E. to the general public. Thi
 The website features content about the P.A.V.E. program, curriculum, year-to-date attendance, and how to contact for more information.
 
 # Programs and Sites used to develop my Website
-I developed my project on my chromebook using the Linux terminal environment in conjunction with Visual Studio Code and Github workspaces. I used HTML, CSS and Javascript. I integrated Google APIs (Sheets & Forms) for specific functions.In my Google cloud console, I enabled the Google Forms API and Google Sheets API for usage in my project.
+I developed my project on my chromebook using the Linux terminal environment in conjunction with Visual Studio Code and Github workspaces. I used HTML, CSS and Javascript. I integrated Google APIs (Sheets & Forms) for specific functions. In my Google cloud console, I enabled the Google Forms API and Google Sheets API for usage in my project.
 
 # To run locally:
 
 1. Download Visual Studio Code (in your appropriate computer language)
 
-2. Install in your terminal, the updated versions of the following: 
+2. Install in your terminal, the updated versions of the following:<br>
 
-      npm version 10.2.3
-      node version 20.10.0
-      google-apis-nodejs-client-libraries
+      <li>npm version 10.2.3</li>
+      <li>node version 20.10.0</li>
+      <li>google-apis-nodejs-client-libraries</li>
 
 3. Clone this repository to your local machine:
 
@@ -32,7 +32,7 @@ I developed my project on my chromebook using the Linux terminal environment in 
 
 #Features List
 
-1. Visualize data in a user friendly way: I integrated a Google sheets to display a chart shows real-time attendance for the 2023 y-t-d that updates every 24 hours.
+1. Visualize data in a user friendly way: I integrated a Google sheets to display a chart shows real-time attendance for the 2023 Y-t-d that updates every 24 hours.
 
 2. Calculate and display data based on an external factor: I have displayed a countdown to show how many days until the new PAVE session begins in 2024.
 
