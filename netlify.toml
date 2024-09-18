@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "https://www.pave502.netlify.app/:splat"
+  status = 301
+  force = true
