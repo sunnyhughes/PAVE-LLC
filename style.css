@@ -2,8 +2,8 @@
 
 body {
   font-family: sans-serif;
-  margin: 20px;
-  padding: 20px;
+  margin: 15px;
+  padding: 15px;
 }
 
 
@@ -26,14 +26,14 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #edf84b;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(217, 255, 48);
-  color: white;
+  background-color: #fdf146fa;
+  color: rgb(252, 252, 252);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -44,17 +44,68 @@ body {
 nav {
   display: inline;;
 }
-/* Main areas */
+
+/*     NEW INDEX>HTML CSS TO REDIRECT TO NEW PAGE  */
+
 
 header {
   display: flex;
   padding: 20px 0;
-  font-size: 35px;
+  font-size: 40px;
+  color: rgb(12, 85, 180);
   text-align: center;
   justify-content: center;
 }
 
-#new-session-starts {
+.container {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+ 
+}
+
+.container a {
+
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container a:hover {
+      text-decoration: underline;
+      
+    }
+  
+
+  .arrow-text {
+      font-size: 24px;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .arrow-text span {
+      margin: 0 10px;
+    }
+
+  .arrow {
+      font-size: 24px;
+      color: #007BFF;
+    }
+
+/*
+    #new-session-starts {
   border: dotted 5px rgb(217, 255, 48);
 }
 
@@ -66,6 +117,8 @@ header {
 #new-session-starts p {
   text-align: center;
 }
+
+
 
 h2 {
   text-align: center;
@@ -119,7 +172,7 @@ a {
   text-decoration: underline;
 }
 
-/* Modules Headers */
+/* Modules Headers 
 
 .module h4 {
   display: flex;
@@ -144,6 +197,10 @@ a {
   text-align: center;
   border: solid 5px rgb(217, 255, 48);
 }
+
+/
+
+
 /* Contact page */
 
 #contact p {
@@ -372,3 +429,89 @@ CSS for GALLERY
 
 }
 
+/* Media Queries */
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav .icon {
+    display: block;
+  }
+
+  header {
+    font-size: 25px;
+    padding: 15px 0;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .arrow-text {
+    font-size: 18px;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  header {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .arrow-text {
+    font-size: 19px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+}
+
+/* Desktops and larger screens */
+@media only screen and (min-width: 901px) {
+  header {
+    font-size: 40px;
+    padding: 20px 0;
+  }
+
+  .container {
+    padding: 50px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .arrow-text {
+    font-size: 24px;
+  }
+
+  .arrow {
+    font-size: 24px;
+  }
+}
